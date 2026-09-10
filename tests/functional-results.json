@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "listCalls": 15,
+  "checks": [
+    "Inicio de sesión y rechazo de contraseña incorrecta",
+    "Selección de archivo sin guardado prematuro",
+    "Guardar trabajos y consultar desde otro dispositivo",
+    "Descarga con bytes iguales al archivo original",
+    "Edición con historial",
+    "Cancelar evaluación sin guardar",
+    "Roles de estudiante y administrador",
+    "Notas visibles en el otro dispositivo",
+    "Error de red sin confirmación falsa",
+    "Reintento tras respuesta perdida sin duplicar",
+    "HTML exportado sin sesión ni contraseña",
+    "Copia offline con bytes del archivo",
+    "Restauración de versión y borrado confirmado",
+    "Asistente funcional sin letrero inferior"
+  ],
+  "scope": "Supabase simulado. Sin escrituras al proyecto real."
+}

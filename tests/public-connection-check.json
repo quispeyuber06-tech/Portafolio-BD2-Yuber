@@ -1,0 +1,12 @@
+{
+  "checked_at": "2026-09-10",
+  "project": "https://axhngpimswxslllnajog.supabase.co",
+  "auth_settings_status": 200,
+  "email_provider_enabled": true,
+  "bd2_session_anonymous_status": 401,
+  "bd2_session_anonymous_code": "42501",
+  "bd2_session_result": "permission denied for function bd2_session",
+  "meaning": "Proyecto responde. El procedimiento de sesión existe y rechaza el acceso sin iniciar sesión.",
+  "real_authenticated_upload_tested": false,
+  "real_mutations_performed": false
+}

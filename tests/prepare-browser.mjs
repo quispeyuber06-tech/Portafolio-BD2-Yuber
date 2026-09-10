@@ -1,0 +1,10 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import zlib from 'node:zlib';
+import {execFileSync} from 'node:child_process';
+const root=path.resolve(import.meta.dirname,'..');
+const dir=path.join(root,'tests/browser');fs.mkdirSync(dir,{recursive:true});
+for(const name of ['chromium.br','fonts.tar.br','swiftshader.tar.br'])fs.writeFileSync(path.join(dir,name.replace('.br','')),zlib.brotliDecompressSync(fs.readFileSync(path.join(root,'node_modules/@sparticuz/chromium/bin',name))));
+fs.chmodSync(path.join(dir,'chromium'),0o755);
+execFileSync('python3',['-c','import sys,tarfile,pathlib; p=pathlib.Path(sys.argv[1]); [(tarfile.open(f).extractall(p,filter="data")) for f in p.glob("*.tar")]',dir]);
+console.log('Chromium de pruebas preparado.');
