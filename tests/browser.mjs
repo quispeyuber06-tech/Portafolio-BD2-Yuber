@@ -1,0 +1,2 @@
+import {chromium} from 'playwright-core';import path from 'node:path';
+export async function launch(){const root=path.resolve('tests/browser-runtime');return chromium.launch({executablePath:path.join(root,'chromium'),headless:true,env:{...process.env,LD_LIBRARY_PATH:root+':'+path.join(root,'lib'),FONTCONFIG_PATH:path.join(root,'fonts')},args:['--no-sandbox','--disable-dev-shm-usage','--disable-gpu']});}

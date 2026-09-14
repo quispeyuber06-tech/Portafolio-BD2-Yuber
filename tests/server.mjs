@@ -1,0 +1,2 @@
+import http from 'node:http';import fs from 'node:fs';
+export async function serve(){const bytes=fs.readFileSync(new URL('../index.html',import.meta.url));const server=http.createServer((req,res)=>{res.writeHead(200,{'content-type':'text/html; charset=utf-8'});res.end(bytes);});await new Promise(resolve=>server.listen(0,'127.0.0.1',resolve));return {url:`http://127.0.0.1:${server.address().port}/index.html`,close:()=>server.close()};}

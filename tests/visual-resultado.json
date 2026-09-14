@@ -1,0 +1,12 @@
+{
+  "date": "2026-09-14T01:09:39.755Z",
+  "checks": [
+    "Seis secciones sin desbordamiento horizontal y campana visible a 320px",
+    "Seis secciones sin desbordamiento horizontal y campana visible a 390px",
+    "Seis secciones sin desbordamiento horizontal y campana visible a 768px",
+    "Seis secciones sin desbordamiento horizontal y campana visible a 1440px",
+    "Cambio visual de tema y escena de personajes",
+    "Pausar personajes permite abrir páginas y login sin ocultar su contenido"
+  ],
+  "passed": 6
+}

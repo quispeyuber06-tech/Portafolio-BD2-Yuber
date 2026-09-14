@@ -1,0 +1,17 @@
+{
+  "date": "2026-09-14T01:02:46.934Z",
+  "readOnly": true,
+  "results": [
+    {
+      "endpoint": "/auth/v1/settings",
+      "error": "The operation was aborted due to timeout"
+    },
+    {
+      "endpoint": "/rest/v1/rpc/bd2_session",
+      "status": 401,
+      "code": "42501",
+      "emailAuthEnabled": null,
+      "message": "permission denied for function bd2_session"
+    }
+  ]
+}
