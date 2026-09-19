@@ -1,0 +1,21 @@
+{
+  "date": "2026-09-14T01:10:03.480Z",
+  "environment": "Chromium con Supabase simulado; no escribe en cuentas reales",
+  "checks": [
+    "Login rechaza cuenta estudiante en acceso administrador",
+    "No se concede permiso de evaluación a estudiante",
+    "Seleccionar archivo no guarda; Guardar trabajos sube bytes y registra entrega",
+    "Otro dispositivo recibe la misma entrega en panel de administrador",
+    "Administrador abre los bytes del archivo recibido",
+    "La nota fuera de 0 a 20 no se envía",
+    "Nota y comentario llegan a Notificaciones del estudiante",
+    "Marcar notificación leída persiste en el servidor simulado",
+    "Conflicto de versiones conserva la edición del estudiante y rechaza nota desactualizada",
+    "Comentarios se presentan como texto sin ejecutar HTML",
+    "Panel administrador sin desbordamiento horizontal en móvil",
+    "Cerrar sesión limpia el acceso y regresa al portafolio; la ruta admin queda protegida",
+    "Fallo de red informa error sin borrar entregas",
+    "Sin errores JavaScript durante los flujos"
+  ],
+  "passed": 14
+}
